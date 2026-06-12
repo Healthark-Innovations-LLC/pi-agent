@@ -10,10 +10,9 @@ docker rm -f $image >/dev/null || :
 
 set -xe
 
-docker run -it \
+docker run --rm -it \
   --name $image \
   --network agents \
-  --restart always \
   -v pi-agent:/root/.pi \
   $image 
 

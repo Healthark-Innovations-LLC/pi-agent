@@ -1,5 +1,13 @@
 {
   "providers": {
+    "ollama-remote": {
+      "baseUrl": "http://192.168.111.175:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        { "id": "gemma4:12b" }
+      ]
+    },
     "ollama": {
       "baseUrl": "http://ollama:11434/v1",
       "api": "openai-completions",
