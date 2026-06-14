@@ -13,6 +13,7 @@ set -xe
 docker run --rm -it \
   --name $image \
   --network agents \
+  -p 0.0.0.0:3001:3001 \
   --memory-reservation=2g \
   -v pi-agent:/root/.pi \
   $image 
