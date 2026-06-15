@@ -16,4 +16,5 @@ docker run --rm -it \
   -p 0.0.0.0:3001:3001 \
   --memory-reservation=2g \
   -v $image:/root/.pi/agent/sessions \
-  $image 
+  -v $image-ssh:/root/.ssh \
+  $image
