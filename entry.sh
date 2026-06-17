@@ -6,6 +6,4 @@ if "$@"; then
   exec "$@"
 fi
 
-pi update
-
 exec pi "$@"
