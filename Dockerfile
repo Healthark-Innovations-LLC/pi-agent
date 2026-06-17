@@ -5,7 +5,7 @@ RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-p
 RUN python3 -m pip install -U pip --break-system-packages
 RUN curl -fsSL https://pi.dev/install.sh | sh
 RUN pi update
-#RUN pi install git:github.com/deflating/tau
+RUN pi install git:github.com/deflating/tau
 
 COPY models.json /root/.pi/agent/models.json
 
@@ -24,4 +24,6 @@ ENV TAU_DISABLED=0
 #ENV TAU_USER=""
 #ENV TAU_PASS=""
 
-ENTRYPOINT pi
+COPY entry.sh /entry.sh
+
+ENTRYPOINT ["/bin/bash", "/entry.sh"]
