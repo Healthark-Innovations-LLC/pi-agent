@@ -9,7 +9,9 @@ RUN apt update && \
 
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable && \
-    bash antsable/install-ansible.sh
+    cd antsable && \
+    bash install-ansible.sh && \
+    bash ansible-local.sh playbooks/readyup.yml
 
 # install pi
 RUN apt update && \
