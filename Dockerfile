@@ -7,6 +7,10 @@ RUN apt update && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
+# ansible
+RUN git clone https://github.com/TheShellLand/antsable && \
+    bash antsable/install-ansible.sh
+
 # install pi
 RUN apt update && \
     apt install -y vim curl wget unzip build-essential python3-dev && \
