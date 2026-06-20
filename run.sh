@@ -16,6 +16,6 @@ docker run --rm -it \
   -p 0.0.0.0:3001:3001 \
   --memory-reservation=2g \
   -v //var/run/docker.sock:/var/run/docker.sock \
-  -v $image:/root/.pi/agent/sessions \
+  -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-ssh:/root/.ssh \
   $image
