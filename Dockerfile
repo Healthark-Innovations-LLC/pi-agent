@@ -1,16 +1,10 @@
 FROM node:latest
 
-# docker-out-of-docker
-RUN apt update && \
-    apt install -y ca-certificates docker.io && \
-    apt clean -y && \
-    apt autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
-
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable && \
     cd antsable && \
     bash install-ansible.sh && \
+    # chrome, docker
     bash ansible-local.sh playbooks/readyup.yml
 
 # install pi
