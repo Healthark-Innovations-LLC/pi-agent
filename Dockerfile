@@ -17,6 +17,7 @@ RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-p
     python3 -m pip install -U pip --break-system-packages
 RUN curl -fsSL https://pi.dev/install.sh | sh && \
     pi update && \
+    pi update --extensions && \
     pi install git:github.com/deflating/tau
 
 COPY models.json /root/.pi/agent/models.json
