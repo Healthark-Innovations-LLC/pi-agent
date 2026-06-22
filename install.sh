@@ -1,7 +1,7 @@
 #!/bin/bash 
 # copies run.sh to your local bin
 
-script=run-mnt.sh
+script=run.sh
 
 set -xe 
 
