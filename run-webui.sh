@@ -16,6 +16,7 @@ docker run --rm -it \
   -p 0.0.0.0:3001:3001 \
   --shm-size=2g \
   -v //var/run/docker.sock:/var/run/docker.sock \
+  -v $image-bin:/root/.pi/agent/bin \
   -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-ssh:/root/.ssh \
   $image "$@"
