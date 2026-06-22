@@ -6,7 +6,7 @@ prompt=""
 mount="."
 
 # Parse arguments
-while getopts "$@" opt; do
+while getopts "p:m:" opt; do
   case "$opt" in
     p) prompt="$OPTARG" ;;
     m) mount="$OPTARG" ;;
