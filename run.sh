@@ -29,6 +29,7 @@ docker run --rm -it \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-ssh:/root/.ssh \
+  -v "$(pwd)"/AGENTS.md:/root/.pi/agent/AGENTS.md \
   -v $mount:/root/workspace \
   $image "$prompt"
 

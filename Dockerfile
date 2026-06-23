@@ -24,7 +24,7 @@ COPY models.json /root/.pi/agent/models.json
 
 VOLUME /root/.pi/agent/sessions
 
-WORKDIR /root
+WORKDIR /root/brain
 
 EXPOSE 3001
 
