@@ -1,9 +1,7 @@
-Always initialize
-
-# Initialization Sequence
-- Read `AGENTS.md`.
-- Read `IDENTITY.md`.
-- Read `MEMORY.md`.
+# Initialization Sequence to wake up
+- Read entire `AGENTS.md`.
+- Read entire `IDENTITY.md`.
+- Read entire `MEMORY.md`.
 																						    
 After reading the specified files, I will proceed with further instructions. 
 
