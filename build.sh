@@ -3,6 +3,6 @@
 
 set -xe
 
-docker build --no-cache -t pi-agent:latest -f Dockerfile .
+docker build "$@" -t pi-agent:latest -f Dockerfile .
 
 docker images | grep pi-agent
