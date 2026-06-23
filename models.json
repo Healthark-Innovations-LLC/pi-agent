@@ -6,6 +6,13 @@
       "apiKey": "ollama",
       "models": [
         {
+          "id": "qwen2.5:14b",
+          "params": {
+            "num_ctx": 256000,
+            "contextWindow": 256000
+          }
+        },
+        {
           "id": "gemma4:12b",
           "params": {
             "num_ctx": 256000,
@@ -19,6 +26,13 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
+        {
+          "id": "qwen2.5:14b",
+          "params": {
+            "num_ctx": 256000,
+            "contextWindow": 256000
+          }
+        },
         {
           "id": "gemma4:12b",
           "params": {
@@ -34,6 +48,13 @@
       "apiKey": "ollama",
       "models": [
         {
+          "id": "qwen2.5:14b",
+          "params": {
+            "num_ctx": 256000,
+            "contextWindow": 256000
+          }
+        },
+        {
           "id": "gemma4:12b",
           "params": {
             "num_ctx": 256000,
@@ -47,6 +68,13 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
+        {
+          "id": "qwen2.5:14b",
+          "params": {
+            "num_ctx": 256000,
+            "contextWindow": 256000
+          }
+        },
         {
           "id": "gemma4:12b",
           "params": {
