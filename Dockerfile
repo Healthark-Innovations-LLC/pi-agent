@@ -22,7 +22,7 @@ RUN curl -fsSL https://pi.dev/install.sh | sh && \
 
 COPY models.json /root/.pi/agent/models.json
 #COPY SYSTEM.md /root/.pi/agent/APPEND_SYSTEM.md
-COPY SYSTEM.md /root/.pi/agent/SYSTEM.md
+#COPY SYSTEM.md /root/.pi/agent/SYSTEM.md
 
 VOLUME /root/.pi/agent/sessions
 
