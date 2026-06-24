@@ -2,5 +2,5 @@
 
 set -xe
 
-exec pi "$(cat ~/brain/AGENTS.md)" "$@"
+exec pi "$(cat ~/brain/*.md)" "$@"
 
