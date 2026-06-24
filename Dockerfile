@@ -21,8 +21,7 @@ RUN curl -fsSL https://pi.dev/install.sh | sh && \
     pi install git:github.com/deflating/tau
 
 COPY models.json /root/.pi/agent/models.json
-#COPY SYSTEM.md /root/.pi/agent/APPEND_SYSTEM.md
-#COPY SYSTEM.md /root/.pi/agent/SYSTEM.md
+COPY AGENTS.md /root/.pi/agent/AGENTS.md
 
 VOLUME /root/.pi/agent/sessions
 
