@@ -24,6 +24,15 @@ set -xe
 
 docker run --rm -it \
   --network agents \
+  -p 0.0.0.0:3001:3001 \
+  --shm-size=2g \
+  -v //var/run/docker.sock:/var/run/docker.sock \
+  -v $image-bin:/root/.pi/agent/bin \
+  -v $image-sessions:/root/.pi/agent/sessions \
+  -v $image-ssh:/root/.ssh \
+  -v $mount:/root/brain \
+  $image "$prompt" || docker run --rm -it \
+  --network agents \
   --shm-size=2g \
   -v //var/run/docker.sock:/var/run/docker.sock \
   -v $image-bin:/root/.pi/agent/bin \
