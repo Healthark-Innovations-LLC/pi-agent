@@ -6,17 +6,10 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "qwen2.5:14b",
-          "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
-          }
-        },
-        {
           "id": "gemma4:12b",
+          "contextWindow": 256000,
           "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
+            "num_ctx": 256000
           }
         }
       ]
@@ -27,17 +20,10 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "qwen2.5:14b",
-          "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
-          }
-        },
-        {
           "id": "gemma4:12b",
+          "contextWindow": 256000,
           "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
+            "num_ctx": 256000
           }
         }
       ]
@@ -48,17 +34,10 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "qwen2.5:14b",
-          "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
-          }
-        },
-        {
           "id": "gemma4:12b",
+          "contextWindow": 256000,
           "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
+            "num_ctx": 256000
           }
         }
       ]
@@ -69,17 +48,10 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "qwen2.5:14b",
-          "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
-          }
-        },
-        {
           "id": "gemma4:12b",
+          "contextWindow": 256000,
           "params": {
-            "num_ctx": 256000,
-            "contextWindow": 256000
+            "num_ctx": 256000
           }
         }
       ]
