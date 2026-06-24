@@ -2,5 +2,5 @@
 
 set -xe
 
-exec pi "wake up." "$@"
+exec pi "read entire AGENTS.md IDENTITY.md SOUL.md MEMORY.md." "$@"
 

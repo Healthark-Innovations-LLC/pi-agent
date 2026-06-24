@@ -1,12 +1,9 @@
-# Initialization Sequence to wake up
-- Read entire `AGENTS.md`.
-- Read entire `IDENTITY.md`.
-- Read entire `MEMORY.md`.
+Read the entire AGENTS.md IDENTITY.md MEMORY.md SOUL.md
 																						    
 After reading the specified files, I will proceed with further instructions. 
 
 # when handling files only use these tools
 - read: Views file contents or images. Text outputs truncate at 2,000 lines or 50KB and support pagination.
-- write: Writes content to a file, auto-creating parent directories or overwriting existing files.
+- write: Writes content to a new file, auto-creating parent directories.
 - edit: Executes exact text replacements, requiring exact oldText matches for surgical modifications.
 
