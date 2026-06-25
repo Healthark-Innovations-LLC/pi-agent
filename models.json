@@ -55,6 +55,20 @@
           }
         }
       ]
+    },
+    "ollama_localhost": {
+      "baseUrl": "http://localhost:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {
+          "id": "gemma4:12b",
+          "contextWindow": 256000,
+          "params": {
+            "num_ctx": 256000
+          }
+        }
+      ]
     }
   }
 }
