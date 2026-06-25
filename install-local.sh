@@ -1,7 +1,7 @@
 #!/bin/bash
 # install pi locally
 
-cd "$(dirname $0)
+cd "$(dirname $0)"
 
 set -xe
 
