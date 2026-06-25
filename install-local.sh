@@ -8,4 +8,4 @@ set -xe
 curl -fsSL https://pi.dev/install.sh | sh && \
     pi update
 
-cp -v model.json ~/.pi/agent/model.json
+cp -v models.json ~/.pi/agent/models.json
