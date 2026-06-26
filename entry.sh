@@ -2,5 +2,4 @@
 
 set -xe
 
-exec pi "$(cat ~/brain/*.md)" "$@"
-
+exec pi --approve "$(cat ~/brain/*.md)" "$@"
