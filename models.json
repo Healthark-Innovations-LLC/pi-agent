@@ -6,7 +6,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
     },
@@ -16,7 +15,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
 
@@ -27,7 +25,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
     },
@@ -37,7 +34,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
     },
@@ -47,7 +43,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
     },
@@ -57,7 +52,6 @@
       "apiKey": "ollama",
       "models": [
         {"id": "gemma4:12b", "contextWindow": 20000},
-        {"id": "deepseek-r1:14b", "contextWindow": 20000},
         {"id": "qwen2.5:14b", "contextWindow": 20000}
       ]
     }
