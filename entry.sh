@@ -11,8 +11,9 @@ fi
 
 if [[ ! -z $PRIME_PROMPT ]]; then
   set -x
-  exec pi --approve "$(cat ~/brain/*.md)" "$@"
+  exec pi --approve $@ "$(cat ~/brain/*.md)"
 fi
 
 set -x
 exec pi --approve
+
