@@ -2,7 +2,7 @@
 # run agent in a loop 
 
 while true; do 
-  pi $@
+  pi -p "$@"
   sleep 1
 done
 
