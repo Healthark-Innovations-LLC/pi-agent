@@ -6,7 +6,7 @@ prompt="$@"
 mount="."
 WEBUI_RUNNING="false"
 
-set -ex
+set -e
 
 docker network create agents >/dev/null 2>&1 || :
 
