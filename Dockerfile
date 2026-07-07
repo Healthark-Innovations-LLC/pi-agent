@@ -40,6 +40,8 @@ ENV TAU_DISABLED=0
 #ENV TAU_USER=""
 #ENV TAU_PASS=""
 
-COPY entry.sh /entry.sh
+COPY entry.sh /pi.sh
 
-ENTRYPOINT ["/bin/bash", "/entry.sh"]
+RUN chmod +x /pi.sh
+
+ENTRYPOINT ["/pi.sh"]
