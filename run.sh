@@ -17,5 +17,5 @@ docker run --rm -it \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-ssh:/root/.ssh \
   -v $mount:/root/brain \
-  $image "$prompt" 
+  $image "$prompt"
 

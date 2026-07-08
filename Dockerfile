@@ -36,11 +36,8 @@ RUN curl -fsSL https://pi.dev/install.sh | sh && \
 
 COPY models.json /root/.pi/agent/models.json
 
-COPY entry.sh /pi.sh
-RUN chmod +x /pi.sh
-
 WORKDIR /root/brain
 
 VOLUME /root/.pi/agent/sessions
 
-ENTRYPOINT ["/pi.sh"]
+ENTRYPOINT ["pi"]

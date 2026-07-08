@@ -2,7 +2,6 @@
 # copies run.sh to your local bin
 
 script="run.sh"
-once="run-once.sh"
 loop="run-loop.sh"
 web="run-web.sh"
 
@@ -15,9 +14,6 @@ sudo cp -v $script /usr/bin/pi || sudo cp -v $script /usr/local/bin/pi
 sudo chmod +rx /usr/bin/pi || sudo chmod +rx /usr/local/bin/pi
 
 which pi && sudo chmod +rx $(which pi)
-
-sudo cp -v $once /usr/bin/pi-once || sudo cp -v $once /usr/local/bin/pi-once
-sudo chmod +rx /usr/bin/pi-once || sudo chmod +rx /usr/local/bin/pi-once
 
 sudo cp -v $loop /usr/bin/pi-loop || sudo cp -v $loop /usr/local/bin/pi-loop
 sudo chmod +rx /usr/bin/pi-loop || sudo chmod +rx /usr/local/bin/pi-loop
