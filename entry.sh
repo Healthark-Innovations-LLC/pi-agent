@@ -1,5 +1,5 @@
 #!/bin/bash
 
 set -ex
-exec pi --approve "$@"
+exec pi --approve $@
 
