@@ -9,6 +9,8 @@ set -e
 
 docker network create agents >/dev/null 2>&1 || :
 
+set -x
+
 docker run --rm -it \
   --network agents \
   --shm-size=2g \
@@ -17,5 +19,5 @@ docker run --rm -it \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-ssh:/root/.ssh \
   -v $mount:/root/brain \
-  $image "$prompt"
+  $image $prompt
 
