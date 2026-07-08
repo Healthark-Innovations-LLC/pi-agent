@@ -1,5 +1,16 @@
 FROM node:latest
 
+ENV OLLAMA_CONTEXT_LENGTH=256000
+
+ENV TAU_MIRROR_PORT=3001
+ENV TAU_HOST=0.0.0.0
+#ENV TAU_STATIC_DIR
+ENV TAU_DISABLED=0
+#ENV TAU_USER=""
+#ENV TAU_PASS=""
+
+EXPOSE 3001
+
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable && \
     cd antsable && \
@@ -25,23 +36,16 @@ RUN curl -fsSL https://pi.dev/install.sh | sh && \
 
 COPY models.json /root/.pi/agent/models.json
 
-VOLUME /root/.pi/agent/sessions
+COPY run-once.sh /usr/local/bin/pi-once
+COPY run-loop.sh /usr/local/bin/pi-loop
+
+RUN chmod +x /usr/local/bin/pi*
+
+COPY entry.sh /pi.sh
+RUN chmod +x /pi.sh
 
 WORKDIR /root/brain
 
-EXPOSE 3001
-
-ENV OLLAMA_CONTEXT_LENGTH=256000
-
-ENV TAU_MIRROR_PORT=3001
-ENV TAU_HOST=0.0.0.0
-#ENV TAU_STATIC_DIR
-ENV TAU_DISABLED=0
-#ENV TAU_USER=""
-#ENV TAU_PASS=""
-
-COPY entry.sh /pi.sh
-
-RUN chmod +x /pi.sh
+VOLUME /root/.pi/agent/sessions
 
 ENTRYPOINT ["/pi.sh"]

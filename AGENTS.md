@@ -1,6 +1,14 @@
 # AGENTS.md
 
+## available agent skills
+
+available skills in the folder SKILLS/:
+
+### run pi agents
+
+- pi-once: run a single prompt in pi agent, that exits after it is finished running
+
 # TASKS
 
-- read all git changes and commit changes with a descriptive message
+- run pi agent once to read all git changes and commit changes with a descriptive message
 
