@@ -40,4 +40,7 @@ WORKDIR /root/brain
 
 VOLUME /root/.pi/agent/sessions
 
-ENTRYPOINT ["pi"]
+COPY entrypoint.sh /pi.sh
+RUN chmod +x /pi.sh
+
+ENTRYPOINT ["/pi.sh"]

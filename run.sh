@@ -2,7 +2,6 @@
 # run agent in docker
 
 image="pi-agent"
-prompt="$@"
 mount="."
 
 set -e
@@ -19,5 +18,5 @@ docker run --rm -it \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-ssh:/root/.ssh \
   -v $mount:/root/brain \
-  $image $prompt
+  $image "$@"
 
