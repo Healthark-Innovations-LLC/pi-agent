@@ -9,7 +9,6 @@ set -e
 
 docker network create agents >/dev/null 2>&1 || :
 
-NO_SESSION=""
 docker run --rm -it \
   --network agents \
   --shm-size=2g \
@@ -18,17 +17,5 @@ docker run --rm -it \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-ssh:/root/.ssh \
   -v $mount:/root/brain \
-  $image --session "$folder" "$@" || NO_SESSION=true
-
-if [[ ! -z $NO_SESSION ]]; then
-docker run --rm -it \
-  --network agents \
-  --shm-size=2g \
-  -v //var/run/docker.sock:/var/run/docker.sock \
-  -v $image-sessions:/root/.pi/agent/sessions \
-  -v $image-bin:/root/.pi/agent/bin \
-  -v $image-ssh:/root/.ssh \
-  -v $mount:/root/brain \
-  $image --name "$folder" "$@"
-fi
+  $image --name "$folder" "$@" 
 
