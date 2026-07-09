@@ -5,7 +5,7 @@ script="run.sh"
 loop="run-loop.sh"
 web="run-web.sh"
 
-cd "$(dirname $0)"
+cd "$(dirname $0)"/../
 set -xe 
 
 rm -vf $(which pi) || sudo rm -vf $(which pi)

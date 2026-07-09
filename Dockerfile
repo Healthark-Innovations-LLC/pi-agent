@@ -27,12 +27,12 @@ RUN apt update && \
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
     python3 -m pip install -U pip --break-system-packages
 
-COPY pi-extensions.sh /pi-extensions.sh
+COPY install /install
 
 RUN curl -fsSL https://pi.dev/install.sh | sh && \
     pi update && \
     pi update --extensions && \
-    bash pi-extensions.sh ; echo
+    bash /install/pi-extensions.sh
 
 COPY models.json /root/.pi/agent/models.json
 

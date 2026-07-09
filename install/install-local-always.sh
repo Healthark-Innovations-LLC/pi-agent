@@ -7,7 +7,7 @@ set -xe
 
 rm -vf $(which pi) || sudo rm -vf $(which pi)
 
-curl -fsSL https://pi.dev/install.sh | sh
+bash pi-install-force.sh
 
 bash pi-extensions.sh
 
@@ -16,4 +16,4 @@ pi update --extensions
 
 npm update
 
-cp -v models.json ~/.pi/agent/models.json
+cp -v ../models.json ~/.pi/agent/models.json
