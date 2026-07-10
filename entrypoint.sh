@@ -6,7 +6,7 @@ RESTORE="$(echo $@ | grep -oP '(?<=--name )[a-zA-Z0-9_-]*')"
 
 set -x
 
-if [[ ! -a $RESTORE ]]; then
+if grep -r $RESTORE $HOME/.pi >/dev/null 2>&1 ; then
   exec pi --approve -r "$@"
 fi 
 
