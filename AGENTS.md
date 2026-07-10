@@ -7,5 +7,5 @@ available skills in the folder SKILLS/:
 - pi-once: run a single prompt in pi agent, that exits after it is finished running
 
 # TASKS
-- run pi agent once to read all git changes and commit changes with a descriptive message
+- run `pi-once` skill to read all git changes and commit changes with a descriptive message
 
