@@ -35,6 +35,8 @@ RUN curl -fsSL https://pi.dev/install.sh | sh && \
     bash /install/pi-extensions.sh
 
 COPY models.json /root/.pi/agent/models.json
+#COPY auth.json /root/.pi/agent/models.json
+COPY docker/bin /root/.pi/agent/bin
 
 WORKDIR /root/brain
 
