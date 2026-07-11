@@ -4,14 +4,15 @@
 image="pi-agent"
 mount="."
 folder=$(basename "`pwd`" | sed 's/ /-/g')
+name="pi-web"
 
 set -e
 
 docker network create agents >/dev/null 2>&1 || :
-docker rm -f $image >/dev/null 2>&1 || :
+docker rm -f $pi-web >/dev/null 2>&1 || :
 
 docker run --rm -it \
-  --name $image \
+  --name $pi-web \
   --network agents \
   -p 0.0.0.0:80:3001 \
   --shm-size=2g \
