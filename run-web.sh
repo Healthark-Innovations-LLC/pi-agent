@@ -9,10 +9,10 @@ name="pi-web"
 set -e
 
 docker network create agents >/dev/null 2>&1 || :
-docker rm -f $pi-web >/dev/null 2>&1 || :
+docker rm -f $name >/dev/null 2>&1 || :
 
 docker run --rm -it \
-  --name $pi-web \
+  --name $name \
   --network agents \
   -p 0.0.0.0:80:3001 \
   --shm-size=2g \
