@@ -1,4 +1,19 @@
 {
-  "nextId": 2,
-  "loops": []
+  "nextId": 3,
+  "loops": [
+    {
+      "id": "2",
+      "prompt": "work on the next pending task",
+      "trigger": {
+        "type": "cron",
+        "schedule": "*/1 * * * *"
+      },
+      "status": "active",
+      "recurring": true,
+      "createdAt": 1783780202752,
+      "updatedAt": 1783781649099,
+      "expiresAt": 1784385002752,
+      "fireCount": 24
+    }
+  ]
 }
