@@ -11,6 +11,8 @@ ENV TAU_DISABLED=0
 
 EXPOSE 3001
 
+WORKDIR /
+
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable && \
     cd antsable && \
@@ -38,7 +40,7 @@ COPY models.json /root/.pi/agent/models.json
 #COPY auth.json /root/.pi/agent/models.json
 COPY docker/bin /root/.pi/agent/bin
 
-WORKDIR /root/brain
+WORKDIR /root/
 
 VOLUME /root/.pi/agent/sessions
 
