@@ -9,6 +9,8 @@ set -e
 
 docker network create agents >/dev/null 2>&1 || :
 
+set -x
+
 docker run --rm -it \
   --network agents \
   --shm-size=2g \

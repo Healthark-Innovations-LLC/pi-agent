@@ -1,23 +1,32 @@
 #!/bin/bash 
 # copies run.sh to your local bin
 
-script="run.sh"
+docker="run.sh"
 loop="run-loop.sh"
 web="run-web.sh"
+ro="run-readonly.sh"
 
 cd "$(dirname $0)"/../
-set -xe 
+set -ex
 
-rm -vf $(which pi) || sudo rm -vf $(which pi)
+chmod +rx *.sh
 
-sudo cp -v $script /usr/bin/pi || sudo cp -v $script /usr/local/bin/pi
-sudo chmod +rx /usr/bin/pi || sudo chmod +rx /usr/local/bin/pi
+if sudo touch /usr/bin/.TOUCH 2>/dev/null ; then 
+	sudo rm /usr/bin/.TOUCH
 
-which pi && sudo chmod +rx $(which pi)
+	sudo cp $docker /usr/bin/pi-docker
+	sudo cp $loop /usr/bin/pi-loop
+	sudo cp $web /usr/bin/pi-web
+	sudo cp $ro /usr/bin/pi-ro
+fi
 
-sudo cp -v $loop /usr/bin/pi-loop || sudo cp -v $loop /usr/local/bin/pi-loop
-sudo chmod +rx /usr/bin/pi-loop || sudo chmod +rx /usr/local/bin/pi-loop
+if sudo touch /usr/local/bin/.TOUCH 2>/dev/null ; then
+	sudo rm /usr/local/bin/.TOUCH
 
-sudo cp -v $web /usr/bin/pi-web || sudo cp -v $web /usr/local/bin/pi-web
-sudo chmod +rx /usr/bin/pi-web || sudo chmod +rx /usr/local/bin/pi-web
+	sudo cp $docker /usr/local/bin/pi-docker
+	sudo cp $loop /usr/local/bin/pi-loop
+	sudo cp $web /usr/local/bin/pi-web
+	sudo cp $ro /usr/local/bin/pi-ro
+fi
+
 
