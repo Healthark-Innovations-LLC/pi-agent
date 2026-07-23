@@ -19,6 +19,7 @@ RUN apt update && \
     apt clean -y && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
+
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
     python3 -m pip install -U pip --break-system-packages
 
