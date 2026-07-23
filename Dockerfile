@@ -40,7 +40,7 @@ COPY models.json /root/.pi/agent/models.json
 #COPY auth.json /root/.pi/agent/models.json
 COPY docker/bin /root/.pi/agent/bin
 
-WORKDIR /root/
+WORKDIR /root/brain/
 
 VOLUME /root/.pi/agent/sessions
 
