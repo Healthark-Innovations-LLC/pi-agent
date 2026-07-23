@@ -1,0 +1,19 @@
+{
+  "nextId": 2,
+  "loops": [
+    {
+      "id": "1",
+      "prompt": "run git tasks",
+      "trigger": {
+        "type": "cron",
+        "schedule": "0 * * * *"
+      },
+      "status": "active",
+      "recurring": true,
+      "createdAt": 1784850566355,
+      "updatedAt": 1784850566355,
+      "expiresAt": 1785455366355,
+      "fireCount": 0
+    }
+  ]
+}

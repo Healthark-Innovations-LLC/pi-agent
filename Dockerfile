@@ -15,10 +15,7 @@ WORKDIR /
 
 # install pi
 RUN apt update && \
-    apt install -y vim curl wget unzip && \
-    apt clean -y && \
-    apt autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
+    apt install -y vim curl wget unzip
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
     python3 -m pip install -U pip --break-system-packages
