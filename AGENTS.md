@@ -1,11 +1,8 @@
 # AGENTS.md
 
-## available agent skills
-available skills in the folder SKILLS/:
+## loops
 
-### run pi agent
-- pi-once: run a single prompt in pi agent, that exits after it is finished running
+ensure these loops exist 
 
-# TASKS
-- run `pi-once` skill to read all git changes and commit changes with a descriptive message
+- every 1hr, create a git commit with git diff
 
