@@ -1,0 +1,13 @@
+FROM pi-agent:latest
+
+RUN apt install -y build-essential python3-dev
+RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
+    python3 -m pip install -U pip --break-system-packages
+
+# ansible
+RUN git clone https://github.com/TheShellLand/antsable /antsable && \
+    cd /antsable && \
+    bash install-ansible.sh && \
+    # chrome, docker
+    bash ansible-local.sh playbooks/readyup.yml
+

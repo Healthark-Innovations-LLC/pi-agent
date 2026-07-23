@@ -13,16 +13,9 @@ EXPOSE 3001
 
 WORKDIR /
 
-# ansible
-RUN git clone https://github.com/TheShellLand/antsable && \
-    cd antsable && \
-    bash install-ansible.sh && \
-    # chrome, docker
-    bash ansible-local.sh playbooks/readyup.yml
-
 # install pi
 RUN apt update && \
-    apt install -y vim curl wget unzip build-essential python3-dev && \
+    apt install -y vim curl wget unzip && \
     apt clean -y && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
