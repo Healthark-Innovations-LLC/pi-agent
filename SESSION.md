@@ -14,7 +14,7 @@ The system is currently in a stable, well-documented state with automated mainte
 - **Infrastructure Logging Analysis**: Completed investigation of `error.log`. Identified a systemic PEP 668 (`externally-managed-environment`) failure during the pip installation stage, impacting all packages listed in the remote requirements source.
 
 ## Governance & Cleanup:
-- **Documentation**: `AGENTS.md` was peer-reviewed and refactored for clarity.
+- **Refined Intelligence**: Updated `AGENTS.md` to ensure auto-commit scripts generate descriptive commit messages based on literal `git diff` content, removing "routine" tag ambiguity.
 - **Repo Maintenance**: All pending tasks were flushed via automated git commands.
 
 ## Latest Status:
