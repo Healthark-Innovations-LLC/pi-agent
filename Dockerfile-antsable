@@ -6,6 +6,9 @@ RUN apt update && \
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
     python3 -m pip install -U pip --break-system-packages
 
+# python packages automonisaur
+RUN python3 -m pip install -U -r https://raw.githubusercontent.com/TheShellLand/automonisaur/refs/heads/master/requirements.txt
+
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable /antsable && \
     cd /antsable && \
