@@ -11,9 +11,9 @@
       "status": "active",
       "recurring": true,
       "createdAt": 1784851540434,
-      "updatedAt": 1784851540434,
+      "updatedAt": 1784858419442,
       "expiresAt": 1785456340434,
-      "fireCount": 0
+      "fireCount": 2
     },
     {
       "id": "4",
@@ -25,9 +25,9 @@
       "status": "active",
       "recurring": true,
       "createdAt": 1784851543607,
-      "updatedAt": 1784851543607,
+      "updatedAt": 1784858419468,
       "expiresAt": 1785456343607,
-      "fireCount": 0
+      "fireCount": 2
     }
   ]
 }
