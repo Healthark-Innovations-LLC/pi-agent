@@ -1,5 +1,5 @@
 {
-  "nextId": 5,
+  "nextId": 6,
   "loops": [
     {
       "id": "3",
@@ -11,9 +11,9 @@
       "status": "active",
       "recurring": true,
       "createdAt": 1784851540434,
-      "updatedAt": 1784858419442,
+      "updatedAt": 1784869204912,
       "expiresAt": 1785456340434,
-      "fireCount": 2
+      "fireCount": 5
     },
     {
       "id": "4",
@@ -25,9 +25,23 @@
       "status": "active",
       "recurring": true,
       "createdAt": 1784851543607,
-      "updatedAt": 1784858419468,
+      "updatedAt": 1784869204939,
       "expiresAt": 1785456343607,
-      "fireCount": 2
+      "fireCount": 5
+    },
+    {
+      "id": "5",
+      "prompt": "Every 1hr, create a git commit with git diff",
+      "trigger": {
+        "type": "cron",
+        "schedule": "0 * * * *"
+      },
+      "status": "active",
+      "recurring": true,
+      "createdAt": 1784870663704,
+      "updatedAt": 1784870663704,
+      "expiresAt": 1785475463704,
+      "fireCount": 0
     }
   ]
 }

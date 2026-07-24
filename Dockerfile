@@ -17,9 +17,6 @@ WORKDIR /
 RUN apt update && \
     apt install -y vim curl wget unzip
 
-RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
-    python3 -m pip install -U pip --break-system-packages
-
 COPY install /install
 
 RUN curl -fsSL https://pi.dev/install.sh | sh && \
