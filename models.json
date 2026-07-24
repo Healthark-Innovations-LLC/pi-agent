@@ -5,7 +5,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     },
     "ollama_gpu_5070fe_tailscale": {
@@ -13,7 +13,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     },
     "ollama_gpu_5070fe_local": {
@@ -21,7 +21,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     },
     "ollama_mac": {
@@ -29,7 +29,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     },
     "ollama_docker": {
@@ -37,7 +37,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     },
     "ollama_localhost": {
@@ -45,7 +45,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "gemma4:12b", "contextWindow": 5000}
+        {"id": "gemma4:12b", "contextWindow": 20000}
       ]
     }
   }

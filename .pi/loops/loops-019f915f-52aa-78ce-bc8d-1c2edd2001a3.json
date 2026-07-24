@@ -1,18 +1,32 @@
 {
-  "nextId": 3,
+  "nextId": 5,
   "loops": [
     {
-      "id": "1",
-      "prompt": "run git tasks",
+      "id": "3",
+      "prompt": "Check if there are any unstaged or uncommitted changes using `git status`. If there are, stage all changes with `git add .` and commit them with a descriptive message based on the output of `git diff`. If no meaningful changes are found, do nothing.",
       "trigger": {
         "type": "cron",
         "schedule": "0 * * * *"
       },
       "status": "active",
       "recurring": true,
-      "createdAt": 1784850566355,
-      "updatedAt": 1784850566355,
-      "expiresAt": 1785455366355,
+      "createdAt": 1784851540434,
+      "updatedAt": 1784851540434,
+      "expiresAt": 1785456340434,
+      "fireCount": 0
+    },
+    {
+      "id": "4",
+      "prompt": "Summarize the current progress and relevant information of the project into a concise report and update SESSION.md with this summary.",
+      "trigger": {
+        "type": "cron",
+        "schedule": "0 * * * *"
+      },
+      "status": "active",
+      "recurring": true,
+      "createdAt": 1784851543607,
+      "updatedAt": 1784851543607,
+      "expiresAt": 1785456343607,
       "fireCount": 0
     }
   ]
