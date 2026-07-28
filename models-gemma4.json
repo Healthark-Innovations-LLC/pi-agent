@@ -1,0 +1,52 @@
+{
+  "providers": {
+    "ollama_gpu_1080ti_tailscale": {
+      "baseUrl": "http://100.120.42.82:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    },
+    "ollama_gpu_5070fe_tailscale": {
+      "baseUrl": "http://100.85.195.62:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    },
+    "ollama_gpu_5070fe_local": {
+      "baseUrl": "http://192.168.111.175:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    },
+    "ollama_mac": {
+      "baseUrl": "http://host.docker.internal:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    },
+    "ollama_docker": {
+      "baseUrl": "http://ollama:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    },
+    "ollama_localhost": {
+      "baseUrl": "http://localhost:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {"id": "gemma4:12b", "contextWindow": 20000}
+      ]
+    }
+  }
+}
