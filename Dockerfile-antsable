@@ -9,7 +9,7 @@ RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-p
 # python packages automonisaur
 COPY install /install
 # https://raw.githubusercontent.com/TheShellLand/automonisaur/refs/heads/master/requirements.txt 
-RUN cat /install/requirements.txt | grep -v "#" | xargs -I{} python3 -m pip install -U -r {} || echo
+RUN cat /install/requirements.txt | grep -v "#" | xargs -I{} python3 -m pip install -U {} --break-system-packages || echo
 
 # ansible
 RUN git clone https://github.com/TheShellLand/antsable /antsable && \
