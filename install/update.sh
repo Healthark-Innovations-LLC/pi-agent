@@ -5,7 +5,7 @@ cd "$(dirname $0)"
 
 set -xe
 
-git pull
+git pull || echo
 
 pi update
 npm update

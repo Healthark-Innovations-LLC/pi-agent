@@ -9,6 +9,7 @@ rm -vf $(which pi) || sudo rm -vf $(which pi)
 
 bash pi-install-force.sh
 
+mkdir -p ~/.pi/agent
 cp -v ../models.json ~/.pi/agent/models.json
 
 bash pi-extensions.sh
