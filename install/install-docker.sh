@@ -9,7 +9,7 @@ ro="run-readonly.sh"
 cd "$(dirname $0)"/../
 set -ex
 
-chmod +rx *.sh
+chmod ugo+rx *.sh
 
 if sudo touch /usr/bin/.TOUCH 2>/dev/null ; then 
 	sudo rm /usr/bin/.TOUCH
