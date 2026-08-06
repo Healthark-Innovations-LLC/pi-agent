@@ -15,7 +15,7 @@ WORKDIR /
 
 # install pi
 RUN apt update && \
-    apt install -y vim curl wget unzip
+    apt install -y vim curl wget unzip cron
 
 COPY install /install
 

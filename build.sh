@@ -1,8 +1,10 @@
 #!/bin/bash
 # build image 
 
+image="pi-agent"
+
 set -xe
 
-docker build "$@" -t pi-agent:latest -f Dockerfile .
+docker build --no-cache "$@" -t $image:latest -f Dockerfile .
 
-docker images | grep pi-agent
+docker images | grep $image

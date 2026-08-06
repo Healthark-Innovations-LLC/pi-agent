@@ -1,0 +1,14 @@
+FROM pi-agent:latest
+
+RUN apt update && \
+    apt install -y build-essential
+
+RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3 - --break-system-packages && \
+    python3 -m pip install -U pip --break-system-packages
+
+# python packages automonisaur
+COPY install /install
+# https://raw.githubusercontent.com/TheShellLand/automonisaur/refs/heads/master/requirements.txt 
+RUN apt remove -y python3-packaging && \
+    python3 -m pip install -U -r /install/requirements.txt --break-system-package
+

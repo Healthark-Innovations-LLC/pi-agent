@@ -8,3 +8,7 @@ Ensure these loops exist:
 
 ## system requirements
 You must use the shell to run the `date` command whenever you need the current date.
+
+## skills 
+
+- all created single use skills belong in the SKILLS/ folder
