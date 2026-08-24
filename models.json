@@ -5,7 +5,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
       ]
     },
     "ollama_gpu_5070fe_tailscale": {
@@ -13,7 +13,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
       ]
     },
     "ollama_gpu_5070fe_local": {
@@ -21,7 +21,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
       ]
     },
     "ollama_mac": {
@@ -29,7 +29,8 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
+
       ]
     },
     "ollama_docker": {
@@ -37,7 +38,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
       ]
     },
     "ollama_localhost": {
@@ -45,7 +46,7 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "contextWindow": 20000}
+        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "reasoning": true, "thinkingLevelMap": {"minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20000}
       ]
     }
   }
