@@ -7,6 +7,6 @@ set -xe
 
 bash build.sh
 
-docker build "$@" -t $image:latest -f Dockerfile-python .
+docker build "$@" -t $image-python:latest -f Dockerfile-python .
 
 docker images | grep $image

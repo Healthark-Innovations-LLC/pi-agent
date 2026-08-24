@@ -1,4 +1,4 @@
-FROM pi-agent:latest
+FROM pi-agent-python:latest
 
 RUN apt update && \
     apt install -y build-essential
