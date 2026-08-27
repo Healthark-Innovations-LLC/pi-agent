@@ -1,7 +1,7 @@
 #!/bin/bash
 # run agent in docker
 
-image="pi-agent"
+image="pi-agent-antsable"
 mount="."
 folder=$(basename "`pwd`" | sed 's/ /-/g')
 
