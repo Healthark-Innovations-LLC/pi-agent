@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -x
+
 RESTORE="$(echo $@ | grep -oP '(?<=--name )[a-zA-Z0-9_-]*')"
 
 set -e
