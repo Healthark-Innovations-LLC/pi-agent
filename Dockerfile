@@ -9,6 +9,8 @@ ENV TAU_DISABLED=0
 #ENV TAU_USER=""
 #ENV TAU_PASS=""
 
+ENV PATH="/root/.pi/agent/bin:$PATH"
+
 EXPOSE 3001
 
 WORKDIR /
@@ -19,8 +21,8 @@ RUN apt update && \
 
 COPY install /install
 
-RUN curl -fsSL https://pi.dev/install.sh | sh && \
-    pi update && \
+RUN curl -fsSL https://pi.dev/install.sh | sh
+RUN pi update && \
     pi update --extensions && \
     bash /install/pi-extensions.sh
 

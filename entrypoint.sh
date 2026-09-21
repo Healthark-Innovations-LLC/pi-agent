@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH="/root/.pi/agent/bin:$PATH"
+
 #set -x
 
 RESTORE="$(echo $@ | grep -oP '(?<=--name )[a-zA-Z0-9_-]*')"
