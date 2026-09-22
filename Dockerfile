@@ -11,8 +11,6 @@ ENV TAU_DISABLED=0
 
 ENV PATH="/root/.pi/agent/bin:$PATH"
 
-EXPOSE 3001
-
 WORKDIR /
 
 # install pi
@@ -32,9 +30,11 @@ COPY docker/bin /root/.pi/agent/bin
 
 WORKDIR /root/brain/
 
-VOLUME /root/.pi/agent/sessions
-
 COPY entrypoint.sh /pi.sh
 RUN chmod +x /pi.sh
+
+VOLUME /root/.pi/agent/sessions
+
+EXPOSE 3001
 
 ENTRYPOINT ["/pi.sh"]

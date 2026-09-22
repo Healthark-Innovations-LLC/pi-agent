@@ -1,12 +1,12 @@
 #!/bin/bash
 # build image 
 
-image="pi-agent"
+image="pi-agent-antsable"
 
 set -xe
 
-bash build-python.sh
+#bash build-python.sh
 
-docker build "$@" -t $image-antsable:latest -f Dockerfile-antsable .
+docker build "$@" -t $image:latest -f Dockerfile-antsable .
 
 docker images | grep $image
