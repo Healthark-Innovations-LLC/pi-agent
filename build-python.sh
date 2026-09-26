@@ -6,7 +6,7 @@ image="pi-agent"
 
 set -xe
 
-bash build.sh
+#bash build.sh
 
 docker build "$@" -t $image:latest -f Dockerfile-python .
 
