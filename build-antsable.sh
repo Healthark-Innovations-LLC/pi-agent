@@ -1,7 +1,8 @@
 #!/bin/bash
 # build image 
 
-image="pi-agent-antsable"
+#image="pi-agent-antsable"
+image="pi-agent"
 
 set -xe
 

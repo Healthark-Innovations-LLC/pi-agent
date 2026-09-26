@@ -1,9 +1,9 @@
 #!/bin/bash
 # run agent in docker
 
-image="pi-agent-antsable"
+#image="pi-agent-antsable"
+image="pi-agent"
 mount="."
-folder=$(basename "`pwd`" | sed 's/ /-/g')
 name="pi-web"
 
 set -e
@@ -20,5 +20,5 @@ docker run --rm -it \
   -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-ssh:/root/.ssh \
   -v $mount:/root/brain \
-  $image --name "$folder" "$@" 
+  $image "$@" 
 

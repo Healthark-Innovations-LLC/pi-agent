@@ -7,7 +7,7 @@ if ! node -v ; then
   echo install node; 
 fi 
 
-npm install -g @earendil-works/pi-coding-agent
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent
 
 _HOME="/cygdrive/c/Users/Eric"
 cp -v ../models.json "$_HOME"/.pi/agent/models.json

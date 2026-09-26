@@ -1,7 +1,8 @@
 #!/bin/bash
 # build image 
 
-image="pi-agent-python"
+#image="pi-agent-python"
+image="pi-agent"
 
 set -xe
 
