@@ -1,5 +1,5 @@
 #!/bin/bash
-# install pi locally
+# install pi locally (force install)
 
 cd "$(dirname $0)"
 
@@ -9,13 +9,5 @@ rm -vf $(which pi) || sudo rm -vf $(which pi)
 
 bash pi-install-force.sh
 
-mkdir -p ~/.pi/agent
-cp -v ../models.json ~/.pi/agent/models.json
-
-bash pi-extensions.sh
-
-pi update
-pi update --extensions
-
-npm update
+bash install-local-common.sh
 

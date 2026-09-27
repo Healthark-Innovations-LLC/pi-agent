@@ -9,13 +9,8 @@ fi
 
 npm install -g --ignore-scripts @earendil-works/pi-coding-agent
 
-_HOME="/cygdrive/c/Users/Eric"
-cp -v ../models.json "$_HOME"/.pi/agent/models.json
+#_HOME="/cygdrive/c/Users/Eric"
+#cp -v ../models.json "$_HOME"/.pi/agent/models.json
 
-bash pi-extensions.sh
-
-pi update
-pi update --extensions
-
-npm update
+bash install-local-common.sh
 

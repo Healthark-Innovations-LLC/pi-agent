@@ -1,5 +1,5 @@
 #!/bin/bash
-# run agent in a loop 
+# run local pi agent in a loop 
 
 while true; do 
   set -x

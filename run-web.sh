@@ -1,7 +1,6 @@
 #!/bin/bash
 # run agent in docker
 
-#image="pi-agent-antsable"
 image="pi-agent"
 mount="."
 name="pi-web"
@@ -19,6 +18,7 @@ docker run --rm -it \
   -v //var/run/docker.sock:/var/run/docker.sock \
   -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-ssh:/root/.ssh \
+  -v $image-memory:/AGENT_MEMORY \
   -v $mount:/root/brain \
   $image "$@" 
 
