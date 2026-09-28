@@ -58,7 +58,6 @@ def model_template(
 def build_models_config(providers):
 	models_config = dict()
 	models_config['providers'] = {x[0]: x[1] for x in providers} 
-	#raise Exception(providers)
 	return models_config
 
 
