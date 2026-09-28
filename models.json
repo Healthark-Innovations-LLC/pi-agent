@@ -1,7 +1,7 @@
 {
   "providers": {
     "ollama_gpu_5070fe_tailscale": {
-      "baseUrl": "http://100.84.90.51:11434/v1",
+      "baseUrl": "http://100.85.195.62:11434/v1",
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [

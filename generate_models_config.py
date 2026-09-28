@@ -82,9 +82,10 @@ def main():
 	)
 
 	models_config = build_models_config(providers)
-	print(models_config)
 
 	write_models_config(models_config)
+
+	print('OK')
 
 	return models_config
 
