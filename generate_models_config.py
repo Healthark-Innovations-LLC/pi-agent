@@ -16,7 +16,7 @@ def model_template(
 	input=['text', 'image'], 
 	reasoning=True, 
 	contextWindow=20480, 
-	maxToken=16374,
+	maxTokens=16374,
 	temperature=0.6,
 	frequency_penalty=0.4,
 	presence_penalty=0.2,
@@ -48,7 +48,7 @@ def model_template(
 		reasoning=reasoning,
 		thinkingLevelMap=dict(off='off', minimal='minimal', low='low', medium='medium', high='high'),
 		contextWindow=contextWindow,
-		maxTokens=maxToken,
+		maxTokens=maxTokens,
 		temperature=temperature,
 		frequency_penalty=frequency_penalty,
 		presence_penalty=presence_penalty,
@@ -57,13 +57,14 @@ def model_template(
 
 def build_models_config(providers):
 	models_config = dict()
-	models_config['providers'] = providers 
+	models_config['providers'] = {x[0]: x[1] for x in providers} 
+	#raise Exception(providers)
 	return models_config
 
 
 def write_models_config(config):
 	with open('models.json', 'w') as file:
-		files.write(config)
+		file.write(json.dumps(config, indent=2))
 
 
 def main():
@@ -73,17 +74,18 @@ def main():
 	]
 
 	providers = (
-		provider_template(name='ollama_gpu_1080ti_tailscale', baseUrl='http://100.120.42.82:11434/v1', models),
-		provider_template(name='ollama_gpu_5070fe_tailscale', baseUrl='http://100.85.195.62:11434/v1', models),
-		provider_template(name='ollama_gpu_5070fe_local', baseUrl='http://192.168.111.175:11434/v1', models),
-		provider_template(name='ollama_mac', baseUrl='http://host.docker.internal:11434/v1', models),
-		provider_template(name='ollama_docker', baseUrl='http://ollama:11434/v1', models),
-		provider_template(name='ollama_localhost', baseUrl='http://localhost:11434/v1', models),
+		provider_template(name='ollama_gpu_5070fe_tailscale', baseUrl='http://100.85.195.62:11434/v1', models=models),
+		provider_template(name='ollama_gpu_5070fe_local', baseUrl='http://192.168.111.175:11434/v1', models=models),
+		provider_template(name='ollama_gpu_1080ti_tailscale', baseUrl='http://100.120.42.82:11434/v1', models=models),
+		provider_template(name='ollama_mac', baseUrl='http://host.docker.internal:11434/v1', models=models),
+		provider_template(name='ollama_docker', baseUrl='http://ollama:11434/v1', models=models),
+		provider_template(name='ollama_localhost', baseUrl='http://localhost:11434/v1', models=models),
 	)
 
 	models_config = build_models_config(providers)
-
 	print(models_config)
+
+	write_models_config(models_config)
 
 	return models_config
 

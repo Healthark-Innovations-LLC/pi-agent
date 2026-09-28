@@ -1,19 +1,30 @@
 {
   "providers": {
-    "ollama_gpu_1080ti_tailscale": {
-      "baseUrl": "http://100.120.42.82:11434/v1",
-      "api": "openai-completions",
-      "apiKey": "ollama",
-      "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
-      ]
-    },
     "ollama_gpu_5070fe_tailscale": {
       "baseUrl": "http://100.85.195.62:11434/v1",
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
       ]
     },
     "ollama_gpu_5070fe_local": {
@@ -21,7 +32,53 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
+      ]
+    },
+    "ollama_gpu_1080ti_tailscale": {
+      "baseUrl": "http://100.120.42.82:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
       ]
     },
     "ollama_mac": {
@@ -29,8 +86,26 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
-
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
       ]
     },
     "ollama_docker": {
@@ -38,7 +113,26 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
       ]
     },
     "ollama_localhost": {
@@ -46,7 +140,26 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
-        {"id": "igorls/gemma-4-12B-it-heretic-GGUF", "input": ["text", "image"], "reasoning": true, "thinkingLevelMap": {"off": "off", "minimal": "minimal", "low": "low", "medium": "medium", "high": "high"}, "contextWindow": 20480, "maxTokens": 16384}
+        {
+          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "off",
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high"
+          },
+          "contextWindow": 20480,
+          "maxTokens": 16374,
+          "temperature": 0.6,
+          "frequency_penalty": 0.4,
+          "presence_penalty": 0.2
+        }
       ]
     }
   }
