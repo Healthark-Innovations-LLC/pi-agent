@@ -73,7 +73,7 @@ def main():
 	]
 
 	providers = (
-		provider_template(name='ollama_gpu_5070fe_tailscale', baseUrl='http://100.85.195.62:11434/v1', models=models),
+		provider_template(name='ollama_gpu_5070fe_tailscale', baseUrl='http://100.84.90.51:11434/v1', models=models),
 		provider_template(name='ollama_gpu_5070fe_local', baseUrl='http://192.168.111.175:11434/v1', models=models),
 		provider_template(name='ollama_gpu_1080ti_tailscale', baseUrl='http://100.120.42.82:11434/v1', models=models),
 		provider_template(name='ollama_mac', baseUrl='http://host.docker.internal:11434/v1', models=models),
