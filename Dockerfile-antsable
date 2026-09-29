@@ -1,4 +1,4 @@
-FROM pi-agent:latest
+FROM pi-agent-python:latest
 
 RUN apt update && \
     apt install -y build-essential
@@ -9,6 +9,4 @@ RUN git clone https://github.com/TheShellLand/antsable /antsable && \
     bash install-ansible.sh && \
     # chrome, docker, sqlite3, sqlite-vec
     bash ansible-local.sh playbooks/readyup-agents.yml
-
-COPY SKILLS /root/SKILLS
 

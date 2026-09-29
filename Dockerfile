@@ -28,8 +28,10 @@ COPY models.json /root/.pi/agent/models.json
 #COPY auth.json /root/.pi/agent/models.json
 COPY docker/bin /root/.pi/agent/bin
 
-WORKDIR /root/brain/
+RUN git clone https://github.com/TheShellLand/SKILLS.md.git || echo "ERROR :: can't clone repo"
 
+
+WORKDIR /root/brain/
 COPY entrypoint.sh /pi.sh
 RUN chmod +x /pi.sh
 
