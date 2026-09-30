@@ -22,9 +22,13 @@ fi
 
 # set PATH
 if [[ ! -z "$_PROFILE" ]]; then
-	if ! grep $_PATH "$_PROFILE"; then
+	if ! grep "$_PATH" "$_PROFILE"; then
 		echo >> "$HOME/.zsh"
 		echo "$_PATH" >> "$HOME/.zsh"
+
+		if [[ -d '/usr/local/bin' ]]; then
+			echo 'export PATH="/usr/local/bin/:$PATH"' >> "$HOME/.zsh"
+		fi
 	fi
 fi
 

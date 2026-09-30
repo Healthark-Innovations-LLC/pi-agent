@@ -21,8 +21,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
@@ -48,8 +48,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
@@ -75,8 +75,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
@@ -102,8 +102,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
@@ -129,8 +129,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
@@ -156,8 +156,8 @@
           },
           "contextWindow": 20480,
           "maxTokens": 16374,
-          "temperature": 0.8,
-          "frequency_penalty": 1.0,
+          "temperature": 0.7,
+          "frequency_penalty": 0.5,
           "presence_penalty": 0.4
         }
       ]
