@@ -17,9 +17,9 @@ def model_template(
 	reasoning=True, 
 	contextWindow=20480, 
 	maxTokens=16374,
-	temperature=0.7,
-	frequency_penalty=0.5,
-	presence_penalty=0.4,
+	temperature=1.0,
+	frequency_penalty=1.0,
+	presence_penalty=1.0,
 ):
 	"""LLM sampling parameters for controlling randomness and preventing repetition loops.
 
