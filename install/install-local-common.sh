@@ -38,6 +38,10 @@ fi
 mkdir -p "$HOME/.pi/agent"
 cp -v ../models.json "$HOME/.pi/agent/models.json"
 
+# copy bin
+mkdir -p $HOME/.pi/agent/bin
+cp -v ../docker/bin/* $HOME/.pi/agent/bin/
+
 
 # install pi extensions
 bash pi-extensions.sh
