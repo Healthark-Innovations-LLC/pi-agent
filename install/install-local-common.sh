@@ -33,6 +33,8 @@ if [[ ! -z "$_PROFILE" ]]; then
 fi
 
 
+# generate models.json
+python3 ../generate_models_config.py
 
 # copy models.json
 mkdir -p "$HOME/.pi/agent"
