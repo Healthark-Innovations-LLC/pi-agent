@@ -1,3 +1,4 @@
+import os
 import json
 
 
@@ -64,6 +65,7 @@ def build_models_config(providers):
 def write_models_config(config):
 	with open('models.json', 'w') as file:
 		file.write(json.dumps(config, indent=2))
+	print(os.stat('models.json'))
 
 
 def main():
