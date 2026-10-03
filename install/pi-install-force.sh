@@ -736,9 +736,9 @@ run_pi_install() {
 run_npm_install_pi() {
   npm_loglevel="$1"
   if [ -n "${PI_NPM_INSTALL_PREFIX:-}" ]; then
-    npm install -g --ignore-scripts "$PI_NPM_INSTALL_MIN_AGE_ARG" --prefix "$PI_NPM_INSTALL_PREFIX" --no-fund --no-audit "--loglevel=$npm_loglevel" --progress=false "$PI_PACKAGE"
+    npm install -g --ignore-scripts --min-release-age=0 "$PI_NPM_INSTALL_MIN_AGE_ARG" --prefix "$PI_NPM_INSTALL_PREFIX" --no-fund --no-audit "--loglevel=$npm_loglevel" --progress=false "$PI_PACKAGE"
   else
-    npm install -g --ignore-scripts "$PI_NPM_INSTALL_MIN_AGE_ARG" --no-fund --no-audit "--loglevel=$npm_loglevel" --progress=false "$PI_PACKAGE"
+    npm install -g --ignore-scripts --min-release-age=0 "$PI_NPM_INSTALL_MIN_AGE_ARG" --no-fund --no-audit "--loglevel=$npm_loglevel" --progress=false "$PI_PACKAGE"
   fi
 }
 
