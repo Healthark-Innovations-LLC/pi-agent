@@ -39,6 +39,7 @@ python3 ../generate_models_config.py
 # copy models.json
 mkdir -p "$HOME/.pi/agent"
 cp -v ../models.json "$HOME/.pi/agent/models.json"
+cp -v ../settings.json "$HOME/.pi/agent/settings.json"
 
 # copy bin
 mkdir -p $HOME/.pi/agent/bin

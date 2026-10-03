@@ -1,0 +1,9 @@
+{
+	"tui.input.copy": [],
+	"tuiMode": "fullscreen",
+	"app.message.copy": [],
+	"telemetry": false,
+	"checkUpdates": false,
+	"anonymousMetrics": false,
+	"fullscreenCopyOnSelect": false
+}

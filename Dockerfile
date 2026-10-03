@@ -1,15 +1,14 @@
 FROM node:latest
 
+
+ENV PI_TELEMETRY=0
+ENV PI_CHECK_UPDATES=0
+ENV DO_NOT_TRACK=1
+
 ENV OLLAMA_CONTEXT_LENGTH=256000
 
-ENV TAU_MIRROR_PORT=3001
-ENV TAU_HOST=0.0.0.0
-#ENV TAU_STATIC_DIR
-ENV TAU_DISABLED=0
-#ENV TAU_USER=""
-#ENV TAU_PASS=""
-
 ENV PATH="/root/.pi/agent/bin:$PATH"
+
 
 WORKDIR /
 
@@ -25,6 +24,7 @@ RUN pi update && \
     bash /install/pi-extensions.sh
 
 COPY models.json /root/.pi/agent/models.json
+COPY settings.json /root/.pi/agent/settings.json
 #COPY auth.json /root/.pi/agent/models.json
 COPY docker/bin /root/.pi/agent/bin
 
