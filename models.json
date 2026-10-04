@@ -20,10 +20,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     },
@@ -47,10 +44,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     },
@@ -74,10 +68,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     },
@@ -101,10 +92,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     },
@@ -128,10 +116,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     },
@@ -155,10 +140,7 @@
             "high": "high"
           },
           "contextWindow": 20480,
-          "maxTokens": 16374,
-          "temperature": 1.0,
-          "frequency_penalty": 1.0,
-          "presence_penalty": 1.0
+          "maxTokens": 16374
         }
       ]
     }

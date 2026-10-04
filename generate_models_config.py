@@ -18,31 +18,7 @@ def model_template(
 	reasoning=True, 
 	contextWindow=20480, 
 	maxTokens=16374,
-	temperature=1.0,
-	frequency_penalty=1.0,
-	presence_penalty=1.0,
 ):
-	"""LLM sampling parameters for controlling randomness and preventing repetition loops.
-
-	Attributes:
-		temperature (float):
-			Controls sampling randomness by flattening or sharpening the next-token
-			probability distribution. Set to 0.6 to introduce enough entropy to break
-			deterministic greedy loops (which occur at 0.0) while preserving logical
-			coherence for agent tasks and code generation. Range: 0.0 to 2.0.
-
-		frequency_penalty (float):
-			Penalizes tokens based on their cumulative frequency in the generated text.
-			Applies a compounding deduction (penalty * count) to the raw logits,
-			making repeated phrases progressively less likely to be chosen. This directly
-			stops rhythmic looping like "Wait... Actually...". Range: -2.0 to 2.0.
-
-		presence_penalty (float):
-			Applies a flat, one-time logit penalty to any token that has appeared at
-			least once in the generated output, regardless of total frequency. Acts as
-			a binary nudge that encourages introducing new vocabulary and moving the
-			generation forward instead of lingering on existing words. Range: -2.0 to 2.0.
-	"""
 	return dict(
 		id=name,
 		input=input,
@@ -50,9 +26,6 @@ def model_template(
 		thinkingLevelMap=dict(off='off', minimal='minimal', low='low', medium='medium', high='high'),
 		contextWindow=contextWindow,
 		maxTokens=maxTokens,
-		temperature=temperature,
-		frequency_penalty=frequency_penalty,
-		presence_penalty=presence_penalty,
 	)
 
 
@@ -94,5 +67,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
 
