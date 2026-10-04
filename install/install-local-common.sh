@@ -12,7 +12,7 @@ _PROFILE=""
 
 # zsh (mac os)
 if [[ $_SHELL == "/bin/zsh" ]]; then
-	_PROFILE="$HOME/.zsh"
+	_PROFILE="$HOME/.zshrc"
 fi 
 
 # bash
