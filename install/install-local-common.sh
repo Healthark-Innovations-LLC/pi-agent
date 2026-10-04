@@ -34,7 +34,9 @@ fi
 
 
 # generate models.json
-python3 ../generate_models_config.py
+cd ..
+python3 generate_models_config.py
+cd -
 
 # copy models.json
 mkdir -p "$HOME/.pi/agent"
