@@ -33,6 +33,8 @@ if [[ ! -z "$_PROFILE" ]]; then
 fi
 
 
+git pull || echo 
+
 # generate models.json
 cd ..
 python3 generate_models_config.py
