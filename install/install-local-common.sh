@@ -5,6 +5,7 @@ cd "$(dirname $0)"
 
 set -xe
 
+
 # ensure PATH is set up
 _SHELL=$(echo $SHELL)
 _PATH='export PATH="$HOME/.pi/agent/bin:$PATH"'
@@ -38,7 +39,7 @@ git pull || echo
 # generate models.json
 cd ..
 python3 generate_models_config.py
-cd -
+cd "-"
 
 # copy models.json
 mkdir -p "$HOME/.pi/agent"
