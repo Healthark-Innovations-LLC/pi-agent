@@ -34,8 +34,6 @@ if [[ ! -z "$_PROFILE" ]]; then
 fi
 
 
-git pull || echo 
-
 # generate models.json
 cd ..
 python3 generate_models_config.py
@@ -53,13 +51,4 @@ cp -v ../docker/bin/* $HOME/.pi/agent/bin/
 
 # install pi extensions
 bash pi-extensions.sh
-
-
-# update pi
-pi update
-pi update --extensions
-
-npm update
-
-exit 0
 

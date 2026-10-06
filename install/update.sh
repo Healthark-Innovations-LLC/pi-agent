@@ -7,10 +7,10 @@ set -xe
 
 git pull || echo
 
+bash install-local-common.sh
+
 pi update
 pi update --extensions
 
 npm update
-
-cp -v ../models.json $HOME/.pi/agent/models.json
 
