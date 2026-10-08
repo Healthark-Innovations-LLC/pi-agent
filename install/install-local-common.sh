@@ -3,8 +3,7 @@
 
 cd "$(dirname $0)"
 
-set -xe
-
+set -e
 
 # ensure PATH is set up
 _SHELL=$(echo $SHELL)
@@ -33,11 +32,12 @@ if [[ ! -z "$_PROFILE" ]]; then
 	fi
 fi
 
+set -x
 
 # generate models.json
 cd ..
 python3 generate_models_config.py
-cd "-"
+cd -
 
 # copy models.json
 mkdir -p "$HOME/.pi/agent"
@@ -51,4 +51,13 @@ cp -v ../docker/bin/* $HOME/.pi/agent/bin/
 
 # install pi extensions
 bash pi-extensions.sh
+
+
+# update pi
+pi update
+pi update --extensions
+
+npm update
+
+exit 0
 
