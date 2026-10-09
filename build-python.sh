@@ -6,6 +6,7 @@ image="pi-agent-python"
 set -xe
 
 docker build "$@" -t $image:latest -f Dockerfile-python .
+#docker tag $image:latest pi-agent:latest
 
 docker images | grep $image
 
