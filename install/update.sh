@@ -5,7 +5,7 @@ cd "$(dirname $0)"
 
 set -xe
 
-git pull || echo
+#git pull || echo
 
 bash install-local-common.sh
 
