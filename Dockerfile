@@ -13,30 +13,33 @@ ENV PATH="/root/.pi/agent/bin:$PATH"
 WORKDIR /
 
 # install pi
-RUN apt update && \
-    apt install -y vim curl wget unzip cron
-
 COPY install /install
-
-RUN curl -fsSL https://pi.dev/install.sh | sh
-RUN pi update && \
-    pi update --extensions && \
-    bash /install/pi-extensions.sh
-
 COPY models.json /root/.pi/agent/models.json
 COPY settings.json /root/.pi/agent/settings.json
 #COPY auth.json /root/.pi/agent/models.json
 COPY docker/bin /root/.pi/agent/bin
 
-RUN git clone https://github.com/TheShellLand/SKILLS.md.git || echo "ERROR :: can't clone repo"
+COPY entrypoint.sh /pi.sh
+
+RUN apt update && \
+    apt install -y vim curl wget unzip cron \
+	#
+	curl -fsSL https://pi.dev/install.sh | sh && \
+	#
+	pi update && \
+    pi update --extensions && \
+    bash /install/pi-extensions.sh \
+	#
+	git clone https://github.com/TheShellLand/SKILLS.md.git || echo "ERROR :: can't clone repo" \
+	#
+	chmod +x /pi.sh
 
 
 WORKDIR /root/brain/
-COPY entrypoint.sh /pi.sh
-RUN chmod +x /pi.sh
 
 VOLUME /root/.pi/agent/sessions
 
 EXPOSE 3001
 
 ENTRYPOINT ["/pi.sh"]
+

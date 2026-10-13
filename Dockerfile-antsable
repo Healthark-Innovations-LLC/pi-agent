@@ -1,10 +1,10 @@
 FROM pi-agent-python:latest
 
-RUN apt update && \
-    apt install -y build-essential
-
 # ansible
-RUN git clone https://github.com/TheShellLand/antsable /antsable && \
+RUN apt update && \
+    apt install -y build-essential && \
+	#
+	git clone https://github.com/TheShellLand/antsable /antsable && \
     cd /antsable && \
     bash install-ansible.sh && \
     # chrome, docker, sqlite3, sqlite-vec
