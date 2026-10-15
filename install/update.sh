@@ -7,6 +7,8 @@ set -xe
 
 #git pull || echo
 
+pi -v
+
 bash install-local-common.sh
 
 pi update
