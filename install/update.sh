@@ -16,3 +16,5 @@ pi update --extensions
 
 npm update
 
+pi -v
+
