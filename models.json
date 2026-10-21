@@ -6,7 +6,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"
@@ -30,7 +30,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"
@@ -54,7 +54,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"
@@ -78,7 +78,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"
@@ -102,7 +102,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"
@@ -126,7 +126,7 @@
       "apiKey": "ollama",
       "models": [
         {
-          "id": "igorls/gemma-4-12B-it-heretic-GGUF",
+          "id": "local",
           "input": [
             "text",
             "image"

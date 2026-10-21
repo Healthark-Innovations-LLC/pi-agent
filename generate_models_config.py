@@ -45,6 +45,7 @@ def main():
 
 	models = [
 		model_template(name='local', contextWindow=20480, maxTokens=16374)
+		#model_template(name='gemma4:12b', contextWindow=20480, maxTokens=16374)
 		#model_template(name='igorls/gemma-4-12B-it-heretic-GGUF', contextWindow=20480, maxTokens=16374)
 	]
 
