@@ -42,4 +42,3 @@ VOLUME /root/.pi/agent/sessions
 EXPOSE 3001
 
 ENTRYPOINT ["/pi.sh"]
-

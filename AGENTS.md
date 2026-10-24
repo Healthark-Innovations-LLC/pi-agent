@@ -1,17 +1,22 @@
 # AGENTS.md
 
-## loops
+## Skills
 
-Ensure these loops exist:
-- Every 1hr, create a git commit with a descriptive summary of changes derived from `git diff`, specifically describing the functionality or files modified rather than using generic "routine" tags
-- Every 1hr, compress session context into SESSION.md. get current date and time
-- Every 1hr, read and execute AGENTS.md
+Reusable agent skills may be available in the current directory or installed in `/SKILLS.md`, an absolute directory
+separate from the project repository.
 
+Before performing a task:
 
-## skills 
+1. Recursively search the current directory for `SKILL.md` files. Also search `/SKILLS.md` recursively if that directory
+   exists.
+2. Use the skills' frontmatter names and descriptions to identify skills relevant to the task. `/SKILLS.md/README.md`,
+   when present, provides an optional discovery index.
+3. Read and follow the applicable skills before proceeding. Resolve their relative references from the directory
+   containing the skill's `SKILL.md`.
 
-- all created single use skills belong in the SKILLS/ folder
+Load only relevant skills and supporting references. If no skill applies, proceed with the task using the project's
+instructions and available tools.
 
-### getting the current date and time
-- You must use the shell to run the `date` command whenever you need the current date.
+Before preparing or making a Git commit, find and read the `write-git-commit-messages` skill in the locations above, if
+available.
 
