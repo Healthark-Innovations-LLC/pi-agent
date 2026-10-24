@@ -9,4 +9,3 @@ RUN apt update && \
     bash install-ansible.sh && \
     # chrome, docker, sqlite3, sqlite-vec
     bash ansible-local.sh playbooks/readyup-agents.yml
-

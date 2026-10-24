@@ -11,5 +11,4 @@ RUN apt update && \
 	# python packages automonisaur
 	# https://raw.githubusercontent.com/TheShellLand/automonisaur/refs/heads/master/requirements.txt 
 	apt remove -y python3-packaging && \
-		python3 -m pip install -U -r /install/requirements.txt --break-system-package
-
+    python3 -m pip install -U -r /install/requirements.txt --break-system-package

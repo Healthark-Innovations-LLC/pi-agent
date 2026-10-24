@@ -22,15 +22,15 @@ COPY docker/bin /root/.pi/agent/bin
 COPY entrypoint.sh /pi.sh
 
 RUN apt update && \
-    apt install -y vim curl wget unzip cron \
+    apt install -y vim curl wget unzip cron && \
 	#
 	curl -fsSL https://pi.dev/install.sh | sh && \
 	#
 	pi update && \
     pi update --extensions && \
-    bash /install/pi-extensions.sh \
+    bash /install/pi-extensions.sh && \
 	#
-	git clone https://github.com/TheShellLand/SKILLS.md.git || echo "ERROR :: can't clone repo" \
+	git clone https://github.com/TheShellLand/SKILLS.md && \
 	#
 	chmod +x /pi.sh
 
