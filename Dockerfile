@@ -30,7 +30,7 @@ RUN apt update && \
     pi update --extensions && \
     bash /install/pi-extensions.sh && \
 	#
-	git clone https://github.com/TheShellLand/SKILLS.md && \
+	git clone https://github.com/TheShellLand/SKILLS.git && \
 	#
 	chmod +x /pi.sh
 
