@@ -1,5 +1,21 @@
 # AGENTS.md
 
+## Git Identity
+
+Use the following repository-local Git identity for both authorship and committing:
+
+| Setting      | Value                |
+|--------------|----------------------|
+| `user.name`  | `pi agent`           |
+| `user.email` | `naisanza@gmail.com` |
+
+Before creating commits, verify these settings and configure them locally if needed:
+
+```bash
+git config --local user.name 'pi agent'
+git config --local user.email 'naisanza@gmail.com'
+```
+
 # Shared Agent Instructions
 
 Before performing any task, select the shared skills directory:
