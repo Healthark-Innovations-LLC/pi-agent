@@ -31,6 +31,9 @@ RUN apt update && \
     bash /install/pi-extensions.sh && \
 	#
 	git clone https://github.com/TheShellLand/SKILLS.git && \
+	cd SKILLS && \
+	git remote add ssh git@github.com:TheShellLand/SKILLS.git && \
+	cd - && \
 	#
 	chmod +x /pi.sh
 
